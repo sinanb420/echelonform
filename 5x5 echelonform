@@ -15,13 +15,12 @@ int main()
 	    printf("\n");
 }
 		
-   a=(matris[1][0])/(matris[0][0]); //katsayý ki bu sayi ile 0 yapýcaz.
-      matris[1][0]=((matris[0][0])*a)-matris[1][0]; // R2 C1 = 0
-      matris[1][1]=((matris[0][1])*a)-matris[1][1]; // R2 C2 = 0
-      matris[1][2]=((matris[0][2])*a)-matris[1][2]; // R2 C3 = 0
-      matris[1][3]=((matris[0][3])*a)-matris[1][3]; // R2 C4 = 0
-      matris[1][4]=((matris[0][4])*a)-matris[1][4]; // R2 C5 = 0
-      
+    a=(matris[1][0])/(matris[0][0]); //katsayý ki bu sayi ile 0 yapýcaz. a = 1/1 = 1
+    matris[1][0]=((matris[0][0])*a)-matris[1][0]; // C1 R2 = 0           b = 1/1 = 1
+    matris[1][1]=((matris[0][1])*a)-matris[1][1]; // C2 R2 = 0           c = 2/1 = 2
+    matris[1][2]=((matris[0][2])*a)-matris[1][2]; // C3 R2 = 0           d = 
+    matris[1][3]=((matris[0][3])*a)-matris[1][3]; // C4 R2 = 0           e = 
+    matris[1][4]=((matris[0][4])*a)-matris[1][4]; // C5 R2 = 0        
       
 	b=(matris[2][0])/(matris[0][0]);        
 	matris[2][0]=((matris[0][0])*b)-matris[2][0]; //ayni islemler 3.satirin ilk elemanini 0 yapmak için                 1 2 3 4 5       1 2 3 4 5
@@ -31,10 +30,13 @@ int main()
 	matris[2][4]=((matris[0][4])*b)-matris[2][4]; //                                                                    1 2 3 4 5       0 0 0 0 0
 	
     c=(matris[2][1])/(matris[1][1]);
-	matris[2][1]=((matris[1][1])*c)-matris[2][1]; //3. satirin ikinci elamanin 0 yapma islemi//
+	matris[2][1]=((matris[1][1])*c)-matris[2][1]; //  3. satirin ikinci elamanin 0 yapma islemi//
 	matris[2][2]=((matris[1][2])*c)-matris[2][2];
 	matris[2][2]=matris[2][2]/matris[2][2];
-	
+    
+    d=(matris[3][0])/(matris[0][0]);
+	matris[3][0]=((matris[0][0]*d)-matris[2][0]);
+    
 	
 	 
 	 for(i=0;i<5;i++)
